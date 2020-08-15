@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Exam Time</title>
+    <script>
+        function showAlert() {
+            alert("Response noted! Submit another Response!");
+        }
+    </script>
+</head>
+<body class="text-center">
+<form class="form-signin" action="{{ url_for("foo") }}" method="post">
+    <div class="container">
+
+        <br>
+        <h6 class="h3 mb-3 font-weight-normal">Answer Evaluation System </h6>
+        <br>
+        <br>
+        <h3 class="h3 mb-3 font-weight-normal">Q 1.What is Object Oriented Programming(OOP) ?. (Marks 50)</h3>
+        <br>
+        <textarea name="first" rows="5" cols="100" title="Answer"></textarea><!--name=id -->
+        <br>
+
+
+        <br>
+        <h3 class="h3 mb-3 font-weight-normal">Q 2.what is operating system and  describe its ?. (Marks 100)</h3>
+        <br>
+        <textarea name="second" rows="10" cols="100" title="Answer"></textarea>
+        <br>
+
+        <br>
+
+        <input type="text" placeholder="Full Name" name="name">
+        <input type="text" placeholder="Roll No" name="roll">
+        <input type="email" placeholder="Email ID*" name="emailID">
+
+        <input type="submit" value="Submit" class="btn btn-primary" onclick="showAlert()">
+
+    </div>
+</form>
+</body>
+</html>

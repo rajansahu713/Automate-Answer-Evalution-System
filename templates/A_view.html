@@ -1,0 +1,60 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Student Records</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+</head>  
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+<body>  
+  
+<h1 style="text-align:center">Students  Information</h1>  
+<table border=5>  
+    <thead>  
+        <th>ID</th>  
+        <th>Name</th>  
+        <th>Roll No</th>  
+        <th>Email</th>
+        <th>Marks for Short Answer</th>
+        <th>Marks Descriptive Answer</th>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["id"]}}</td>  
+            <td>{{row["name"]}}</td>  
+            <td>{{row["roll"]}}</td> 
+            <td>{{row["email"]}}</td>
+            <td>{{row["marks_short"]}}</td>
+            <td>{{row["marks_des"]}}</td>  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
