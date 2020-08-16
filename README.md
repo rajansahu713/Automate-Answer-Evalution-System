@@ -8,7 +8,6 @@
 ● For evaluating Short questions we have taken 3 parameters into consideration. They are
 
 keyword matching, grammar checking (using API), synonym checking(You need to download 'GoogleNews-vectors-negative300.bin' from https://s3.amazonaws.com/dl4j-
-
 distribution/GoogleNews-vectors-negative300.bin.gz).
 
 ● For evaluating Descriptive questions we have taken 1 more parameter i.e length
