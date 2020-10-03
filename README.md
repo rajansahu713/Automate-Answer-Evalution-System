@@ -23,6 +23,13 @@ stored in the database.
 
 ● Total marks and other relevant information will be accessed by the institution/admin end.
 
+## Demo
+
+[![Watch the video](https://www.youtube.com/watch?v=B0dVSpPT2h0)
+
+https://www.youtube.com/watch?v=B0dVSpPT2h0
+
+
 ## Requirement 
 
 1. Python
