@@ -25,6 +25,8 @@ stored in the database.
 
 ## Demo
 
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=B0dVSpPT2h0)
+
 [![Watch the video](https://www.youtube.com/watch?v=B0dVSpPT2h0)
 
 https://www.youtube.com/watch?v=B0dVSpPT2h0
