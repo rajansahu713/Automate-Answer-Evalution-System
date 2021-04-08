@@ -1,6 +1,19 @@
 ## Automate-Answer-Evalution-System
 ● A database is created at first along with a student table. (employee.db)
 
+```sql
+import sqlite3  
+  
+con = sqlite3.connect("employee.db")  
+print("Database opened successfully")  
+  
+con.execute("create table Employees (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, roll TEXT UNIQUE NOT NULL, email TEXT NOT NULL, marks_short TEXT NOT NULL, marks_des TEXT NOT NULL)")  
+  
+print("Table created successfully")  
+  
+con.close()
+```
+
 ● An interface is built up using python flask to accept answers from students.
 
 ● There are two types of questions namely- Short type and Descriptive type.
