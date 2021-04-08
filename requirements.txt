@@ -1,0 +1,7 @@
+flask=1.1.2
+markdown=3.1.1
+nltk=3.5
+numpy=1.18.1
+pandas=1.0.3
+python=3.7.4
+requests=2.23.0
