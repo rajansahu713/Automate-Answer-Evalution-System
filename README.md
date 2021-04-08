@@ -20,7 +20,21 @@ con.close()
 
 ● For evaluating Short questions we have taken 3 parameters into consideration. They are
 
-keyword matching, grammar checking (using API), synonym checking(You need to download 'GoogleNews-vectors-negative300.bin' from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz).
+keyword matching,
+grammar checking (using API)
+```javascript
+def GrammerChecker(answer):
+    req = requests.get("https://api.textgears.com/check.php?text=" + answer + "&key=JmcxHCCPZ7jfXLF6")
+    no_of_errors = len(req.json()['errors'])
+    #print(no_of_errors)
+    if no_of_errors > 5 :
+        g = 0
+    else:
+        g = 1
+    return g
+```
+
+synonym checking(You need to download 'GoogleNews-vectors-negative300.bin' from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz).
 
 ● For evaluating Descriptive questions we have taken 1 more parameter i.e length
 
@@ -39,13 +53,3 @@ stored in the database.
 ## Demo
 
 [![Watch the video](Screenshot/Screenshot%20(1005).png)](https://youtu.be/vt5fpE0bzSY)
-
-## Requirement 
-
-1. Python
-
-2. Flask
-
-3. Tensorflow
-
-
